@@ -5,7 +5,7 @@ import '../styles/globalStyles.css';
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className='h-100vh'>
             <Slider />
         </div>
     )

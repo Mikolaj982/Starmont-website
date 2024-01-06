@@ -1,12 +1,10 @@
 import React from 'react'
-import Slider from '../components/Slider';
+import Home from '../components/Home'
 import '../styles/globalStyles.css';
 
 
 export const HomePage = () => {
     return (
-        <div>
-            <Slider />
-        </div>
+        <Home />
     )
 }
