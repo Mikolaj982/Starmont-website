@@ -1,4 +1,5 @@
 import React from 'react'
+import { Bars3Icon } from '@heroicons/react/20/solid';
 
 const Home = () => {
     return (

@@ -29,7 +29,7 @@ const Slider = () => {
                     </>
                 })}
             </Swiper>
-            <div className='swiper-pagination mr-2'></div>
+            <div className='swiper-pagination'></div>
         </div>
     )
 }
