@@ -15,7 +15,7 @@ const Slider = () => {
         pagination: {
             clickable: true,
         },
-        modules: [Mousewheel, Pagination],
+        modules: [Pagination, Mousewheel],
     }
 
     return (

@@ -3,7 +3,7 @@ import React from 'react'
 import Home from './Home';
 import Services from './Services';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Mousewheel } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -11,11 +11,10 @@ const Slider = () => {
     const slideComponents = [Home, Services];
     const swiperOptions = {
         direction: 'vertical' as const,
-        mousewheel: true,
         pagination: {
             clickable: true,
         },
-        modules: [Mousewheel, Pagination],
+        modules: [Pagination],
     }
 
     return (
@@ -29,7 +28,7 @@ const Slider = () => {
                     </>
                 })}
             </Swiper>
-            <div className='swiper-pagination'></div>
+            <div className='swiper-pagination mt-3'></div>
         </div>
     )
 }

@@ -11,7 +11,7 @@ const Slider = () => {
     const slideComponents = [Home, Services];
     const swiperOptions = {
         direction: 'vertical' as const,
-        mousewheel: true,
+        Mousewheel: true,
         pagination: {
             clickable: true,
         },
