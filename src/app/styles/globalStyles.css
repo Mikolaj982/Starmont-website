@@ -25,5 +25,6 @@
 }
 
   .swiper-pagination-vertical {
+    position: fixed;
     margin-right: 8px;
   }

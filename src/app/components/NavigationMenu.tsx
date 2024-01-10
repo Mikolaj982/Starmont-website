@@ -1,26 +1,30 @@
 'use client'
-import React, { useContext } from 'react'
+import React from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import NavLink from './NavLink';
 
 interface NavigationMenuProps {
     setIsOpen: (boolean: boolean) => void;
     isOpen: boolean;
+    handleNav: any,
 }
 
-const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen }) => {
+const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen, handleNav }) => {
     const menuNavigator = [
         {
             name: 'oferta',
             path: '#services',
+            index: 1,
         },
         {
             name: 'cennik',
-            path: '#services',
+            path: '#price-list',
+            index: 2,
         },
         {
             name: 'kontakt',
-            path: '#services',
+            path: '#contact',
+            index: 3,
         }
     ]
 
@@ -32,7 +36,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen }) =>
                 <ul className='mt-4 mb-4 min-h-32'>
                     {menuNavigator.map((obj, index) => {
                         return <li key={index} className='uppercase p-3 text-slate-900 font-semibold active:bg-gray-500'>
-                            <NavLink path={obj.path} title={obj.name} />
+                            <NavLink path={obj.path} title={obj.name} handleNav={handleNav} index={obj.index} />
                         </li>
                     })}
                 </ul>
