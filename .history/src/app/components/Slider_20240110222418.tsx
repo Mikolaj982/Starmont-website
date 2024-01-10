@@ -16,7 +16,21 @@ SwiperCore.use([Mousewheel, Pagination]);
 
 const Slider = () => {
     const slideComponents = [Home, Services, PriceList, Contact];
+    // const [swiper, setSwiper] = useState<SwiperCore>();
     const swiperRef = useRef<SwiperCore | null>(null);
+
+    // const swiperOptions: SwiperOptions = {
+    //     direction: 'vertical' as const,
+    //     mousewheel: true,
+    //     hashNavigation: {
+    //         watchState: true,
+    //     },
+    //     pagination: {
+    //         clickable: true,
+    //         el: '.swiper-pagination',
+    //     },
+    //     modules: [Mousewheel, Pagination, Virtual],
+    // }
 
     useEffect(() => {
         if (swiperRef.current) {
@@ -29,6 +43,23 @@ const Slider = () => {
             swiperRef.current.slideTo(index);
         }
     }
+
+    // const swiper = Swiper({
+    //     direction: 'vertical' as const,
+    //     mousewheel: true,
+    //     hashNavigation: {
+    //         watchState: true,
+    //     },
+    //     pagination: {
+    //         clickable: true,
+    //         el: '.swiper-pagination',
+    //     },
+    //     modules: [Mousewheel, Pagination, Virtual],
+    // });
+
+    // useEffect(() => {
+    //     window.dispatchEvent(new Event('resize'));
+    // }, []);
 
     return (<>
         <Navbar handleNav={handleChangeSlide} />

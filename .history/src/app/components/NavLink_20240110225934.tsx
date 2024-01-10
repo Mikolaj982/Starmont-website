@@ -10,7 +10,7 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ path, title, handleNav, index }) => {
     return <>
-        <a href={path} onClick={() => handleNav(index)}>{title}</a>
+        <a href={path} onClick={() => handleNav()}>{title}</a>
     </>
 }
 

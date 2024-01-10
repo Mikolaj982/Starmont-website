@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .swiper-pagination-bullet {
+  position: fixed;
     width: 10px;
     height: 10px;
     background-color: #999;
@@ -25,6 +26,5 @@
 }
 
   .swiper-pagination-vertical {
-    position: fixed;
     margin-right: 8px;
   }
