@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper/core';
-import { Mousewheel, Pagination } from 'swiper/modules';
+import { Mousewheel, Pagination, Keyboard } from 'swiper/modules';
 import { Element } from 'react-scroll';
 import Home from './Home';
 import Services from './Services';
@@ -12,7 +12,7 @@ import Contact from './Contact';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css';
-SwiperCore.use([Mousewheel, Pagination]);
+SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
 const Slider = () => {
     const slideComponents = [Home, Services, PriceList, Contact];
@@ -33,8 +33,9 @@ const Slider = () => {
     return (<>
         <Navbar handleNav={handleChangeSlide} />
         <Swiper
-            modules={[Pagination, Mousewheel]}
+            modules={[Pagination, Mousewheel, Keyboard]}
             direction="vertical"
+            keyboard
             mousewheel
             pagination={{
                 clickable: true
@@ -45,7 +46,7 @@ const Slider = () => {
             className='h-[100vh]'
         >
             {slideComponents.map((SlideComponent, index) => {
-                return <SwiperSlide key={index} data-hash={SlideComponent.name.toLowerCase()} >
+                return <SwiperSlide key={index} data-hash={SlideComponent.name.toLowerCase()}>
                     <Element name={SlideComponent.name.toLowerCase()} id={SlideComponent.name.toLowerCase()}>
                         <SlideComponent />
                     </Element>
