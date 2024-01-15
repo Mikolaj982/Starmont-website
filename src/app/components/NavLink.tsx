@@ -1,20 +1,17 @@
 'use client'
 import React from 'react'
+import { useGlobalContext } from '../context/context';
 
 interface NavLinkProps {
     path?: string,
     title: string,
-    handleNav: any,
     index: number,
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ title, handleNav, index }) => {
+const NavLink: React.FC<NavLinkProps> = ({ title, index }) => {
+    const { handleChangeSlide } = useGlobalContext();
     return <>
-        <a onClick={() => {
-            handleNav(index);
-            console.log(index);
-        }
-        }>{title}</a>
+        <a onClick={() => handleChangeSlide(index)}>{title}</a>
     </>
 }
 

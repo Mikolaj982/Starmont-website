@@ -56,10 +56,19 @@ const Contact = () => {
         <div id='contact' className='bg-[#88D78B] h-[100vh]'>
             <div className='flex flex-col column h-[100vh] p-8'>
                 <div className='mb-24'>
-                    <h2 className='text-primary mb-10 mt-8 text-3xl font-bold'>Kontakt</h2>
-                    <span className='flex mb-3'><MapPinIcon className='h-6 mr-2 text-primary' /><p className='text-primary font-semibold'>Dziurów, ul. Słoneczna 25, 27-230</p></span>
-                    <span className='flex mb-3'><PhoneIcon className='h-6 mr-2 text-primary' /><p className='text-primary font-semibold'>+48 XXX XXX XXX</p></span>
-                    <span className='flex'><LinkIcon className='h-6 mr-2 text-primary' /><p className='text-primary font-semibold'>example@gmail.com</p></span>
+                    <h2 className='text-primary mb-10 mt-8 text-4xl font-bold'>Kontakt</h2>
+                    <span className='flex mb-3'>
+                        <MapPinIcon className='h-8 mr-2 text-primary' />
+                        <p className='text-primary font-semibold text-xl'>Dziurów, ul. Słoneczna 25, 27-230</p>
+                    </span>
+                    <span className='flex mb-3'>
+                        <PhoneIcon className='h-8 mr-2 text-primary' />
+                        <p className='text-primary font-semibold text-xl'>+48 XXX XXX XXX</p>
+                    </span>
+                    <span className='flex'>
+                        <LinkIcon className='h-8 mr-2 text-primary' />
+                        <p className='text-primary font-semibold text-xl'>example@gmail.com</p>
+                    </span>
                 </div>
                 <div className='flex justify-between flex-col'>
                     <h3 className='text-secondary-text-color mb-4 text-2xl font-semibold text-primary'>Lokalizacja:</h3>

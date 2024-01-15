@@ -53,19 +53,13 @@ const PriceListItems = () => {
     ];
 
     const ListElement = ({ name, description, price, image }: menuProps) => {
-        return <><li className='md:flex md:flex-col '>
-            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 bg-black' />
-            <p className='text-3xl mb-1 font-bold'>{name}</p>
-            <p className='text-xl mb-1 font-medium'>{description}</p>
-            <p className='text-2xl mb-1 font-bold'>Cena: {price} zł</p>
+        return <><li className='flex flex-col items-center'>
+            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 bg-slate-500' />
+            <p className='text-primary text-3xl mb-1 font-bold text-justify'>{name}</p>
+            <p className='text-primary text-xl mb-1 font-medium text-justify'>{description}</p>
+            <p className='text-primary text-2xl mb-1 font-bold'>Cena: {price} zł</p>
         </li></>
     }
-
-    // const ListElements = menu.map((item, index) => {
-    //     return (
-    //         <ListElement key={index} {...item} />
-    //     )
-    // })
 
     return (
         <>
