@@ -2,15 +2,19 @@
 import React from 'react'
 
 interface NavLinkProps {
-    path: string,
+    path?: string,
     title: string,
     handleNav: any,
     index: number,
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ path, title, handleNav, index }) => {
+const NavLink: React.FC<NavLinkProps> = ({ title, handleNav, index }) => {
     return <>
-        <a href={path} onClick={() => handleNav(index)}>{title}</a>
+        <a onClick={() => {
+            handleNav(index);
+            console.log(index);
+        }
+        }>{title}</a>
     </>
 }
 

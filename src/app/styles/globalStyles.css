@@ -24,7 +24,22 @@
     border: 2px solid white;
 }
 
-  .swiper-pagination-vertical {
-    position: fixed;
+.swiper-pagination-vertical, .swiper-pagination-horizontal {
+    position: fixed; 
     margin-right: 8px;
+    margin-bottom: 35px;
   }
+
+  .swiper-pagination-horizontal .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #0062ff;
+    opacity: 0.5; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+}
+
+.swiper-pagination-horizontal .swiper-pagination-bullet-active {
+    background-color: #0062ff; 
+    border: none;
+}

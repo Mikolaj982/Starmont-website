@@ -22,7 +22,7 @@ const Slider = () => {
         if (swiperRef.current) {
             swiperRef.current.update();
         }
-    }, []);
+    }, [swiperRef.current]);
 
     const handleChangeSlide = (index: number) => {
         if (swiperRef.current) {
@@ -47,9 +47,9 @@ const Slider = () => {
         >
             {slideComponents.map((SlideComponent, index) => {
                 return <SwiperSlide key={index} data-hash={SlideComponent.name.toLowerCase()}>
-                    <Element name={SlideComponent.name.toLowerCase()} id={SlideComponent.name.toLowerCase()}>
-                        <SlideComponent />
-                    </Element>
+                    {/* <Element name={SlideComponent.name.toLowerCase()} id={SlideComponent.name.toLowerCase()}> */}
+                    <SlideComponent key={index} />
+                    {/* </Element> */}
                 </SwiperSlide>
             })}
         </Swiper>

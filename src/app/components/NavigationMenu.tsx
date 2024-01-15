@@ -12,19 +12,20 @@ interface NavigationMenuProps {
 const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen, handleNav }) => {
     const menuNavigator = [
         {
+            name: 'główna',
+            path: '#'
+        },
+        {
             name: 'oferta',
             path: '#services',
-            index: 1,
         },
         {
             name: 'cennik',
             path: '#price-list',
-            index: 2,
         },
         {
             name: 'kontakt',
             path: '#contact',
-            index: 3,
         }
     ]
 
@@ -36,7 +37,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen, hand
                 <ul className='mt-4 mb-4 min-h-32'>
                     {menuNavigator.map((obj, index) => {
                         return <li key={index} className='uppercase p-3 text-slate-900 font-semibold active:bg-gray-500'>
-                            <NavLink path={obj.path} title={obj.name} handleNav={handleNav} index={obj.index} />
+                            <NavLink title={obj.name} handleNav={handleNav} index={index} />
                         </li>
                     })}
                 </ul>
