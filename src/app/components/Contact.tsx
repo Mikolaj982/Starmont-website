@@ -71,7 +71,7 @@ const Contact = () => {
                     </span>
                 </div>
                 <div className='flex justify-between flex-col'>
-                    <h3 className='text-secondary-text-color mb-4 text-2xl font-semibold text-primary'>Lokalizacja:</h3>
+                    <h3 className='text-secondary-text-color mb-4 text-2xl font-semibold text-primary'>Gdzie nas znaleźć?</h3>
                     <LoadScript googleMapsApiKey={googleMapsApiKey}>
                         <GoogleMap
                             onLoad={handleMapLoad}

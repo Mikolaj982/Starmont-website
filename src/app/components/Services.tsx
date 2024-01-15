@@ -33,7 +33,7 @@ const Services = () => {
                         })}
                     </ol>
                     <p className='text-xl font-semibold text-slate-100 mt-6'>Zamów dzwoniąc pod numer: XXX XXX XXX</p>
-                    <span className='flex text-xl font-semibold text-slate-100 absolute bottom-12'><a onClick={() => handleChangeSlide(2)}>Cennik poniżej</a><ArrowDownIcon className='h-8 font-bold' /></span>
+                    <span className='flex text-xl underline text-slate-100 absolute bottom-12'><a onClick={() => handleChangeSlide(2)}>Cennik poniżej</a><ArrowDownIcon className='h-8 font-bold' /></span>
                 </div>
             </div >
         </div >
