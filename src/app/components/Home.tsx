@@ -9,7 +9,7 @@ const Home = () => {
     const { handleChangeSlide } = useGlobalContext();
 
     return (
-        <div className="bg-[#373F6C] h-[100vh]">
+        <div className="bg-[#373F6C] h-[100vh] w-[100vw]">
             <TypeAnimation
                 sequence={[
                     'Blacha trapezowa',

@@ -16,7 +16,7 @@ const Services = () => {
     ];
 
     return (
-        <div id='services' className='bg-[#43264F] h-[100vh]'>
+        <div id='services' className='bg-[#43264F] h-[100vh] w-[100vw]'>
             <div className='h-[100%] p-8'>
                 <div className='flex flex-col'>
                     <h2 className='text-slate-100 mb-6 mt-10 text-4xl font-bold'>Oferta</h2>

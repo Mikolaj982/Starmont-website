@@ -43,3 +43,15 @@
     background-color: #0062ff; 
     border: none;
 }
+
+  @media screen and (min-width: 1024px) {
+    .swiper > .swiper-pagination-horizontal {
+      position: fixed;
+      width: 100vw;
+      text-align: center;
+  }
+    
+    .swiper-slide {
+      width: 20rem;
+    }
+  }

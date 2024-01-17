@@ -5,11 +5,11 @@ import PriceListItems from './PriceListItems';
 const PriceList = () => {
 
     return (
-        <div id='price-list' className='bg-[#67A27D] h-[100vh]'>
-            <div className='h-[100%] p-8 flex justify-center'>
-                <div className=''>
-                    <h2 className='text-primary mb-2 mt-8 text-4xl font-bold'>Cennik</h2>
-                    <div className='mt-14'>
+        <div id='price-list' className='bg-[#67A27D] h-[100vh] w-[100vw]' >
+            <div className='h-[100%] p-8 flex flex-col justify-center'>
+                <h2 className='text-primary mb-2 mt-36 text-4xl font-bold'>Cennik</h2>
+                <div>
+                    <div id='swiper-container' className='mt-8'>
                         <PriceListItems />
                     </div>
                 </div>

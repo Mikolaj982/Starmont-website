@@ -53,7 +53,7 @@ const PriceListItems = () => {
     ];
 
     const ListElement = ({ name, description, price, image }: menuProps) => {
-        return <><li className='flex flex-col items-center'>
+        return <><li className='flex flex-col items-center lg:w-[18rem] xl:w-[16rem] xl:h-[16rem]'>
             <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 bg-slate-500' />
             <p className='text-primary text-3xl mb-1 font-bold text-justify'>{name}</p>
             <p className='text-primary text-xl mb-1 font-medium text-justify'>{description}</p>
@@ -66,6 +66,17 @@ const PriceListItems = () => {
             <Swiper
                 modules={[Pagination]}
                 pagination={{ clickable: true }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1280: {
+                        slidesPerView: 4,
+                    }
+                }}
                 slidesPerView={1}
                 spaceBetween={20}
                 className='h-[90vh] w-[85vw]'
