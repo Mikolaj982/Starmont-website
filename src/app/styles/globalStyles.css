@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    margin: 10px 0;
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+  
+  .swiper-pagination-bullet-active {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+    opacity: 1;
+    background-color: #333;
+    border: 2px solid white;
+}
+
+.swiper-pagination-vertical, .swiper-pagination-horizontal {
+    position: fixed; 
+    margin-right: 8px;
+    margin-bottom: 35px;
+  }
+
+  .swiper-pagination-horizontal .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #0062ff;
+    opacity: 0.5; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+}
+
+.swiper-pagination-horizontal .swiper-pagination-bullet-active {
+    background-color: #0062ff; 
+    border: none;
+}
+
+  @media screen and (min-width: 1024px) {
+    #nav-link {
+      margin: 0 15px;
+      position: relative;
+      text-decoration: none;
+    }
+
+    #nav-link:before {
+      content: '';
+      position: absolute;
+      bottom: -4px; 
+      left: 0;
+      right: 0;
+      height: 2px; 
+      background-color: white;
+      transform: scaleX(0); 
+      transform-origin: 0 50%; 
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-link:hover:before {
+      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+}
+
+    .swiper > .swiper-pagination-horizontal {
+      position: fixed;
+      width: 100vw;
+      text-align: center;
+  }
+    
+    .swiper-slide {
+      width: 20rem;
+    }
+  }
