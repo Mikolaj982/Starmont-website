@@ -1,3 +1,4 @@
+'use client'
 import { HomePage } from "./pages";
 
 const Page = () => {
