@@ -48,7 +48,7 @@ const Contact = () => {
 
     return (
         <div id='contact' className='bg-[#88D78B] h-[100vh] w-[100vw]'>
-            <div className='flex flex-col justify-between h-[100vh] p-8 lg:flex-row lg:justify-start'>
+            <div className='flex flex-col justify-around h-[100vh] p-8 lg:flex-row lg:justify-start'>
                 <div className='mb-4'>
                     <h2 className='text-primary mb-10 mt-8 text-4xl font-bold lg:mt-20'>Kontakt</h2>
                     <span className='flex mb-3'>
@@ -65,7 +65,7 @@ const Contact = () => {
                     </span>
                 </div>
                 <div className='flex justify-between flex-col lg:justify-center lg:ml-32'>
-                    <div className='absolute'>
+                    <div className='lg:absolute'>
                         <h3 className='text-secondary-text-color mb-4 text-xl sm:text-2xl font-semibold text-primary'>Gdzie nas znaleźć?</h3>
                         <LoadScript googleMapsApiKey={googleMapsApiKey}>
                             <GoogleMap
@@ -77,12 +77,12 @@ const Contact = () => {
                                     mapTypeControl: false,
                                     fullscreenControl: false,
                                 }}
-                                mapContainerClassName='w-[100%] h-[14rem] mb-4 sm:w-[60%] md:h-[19rem] md:w-[80%] mx-auto lg:w-[44rem] lg:h-[22rem] z-10'
+                                mapContainerClassName='w-[100%] h-[14rem] mb-4 sm:w-[60%] md:h-[19rem] md:w-[80%] mx-auto lg:w-[32rem] xl:w-[44rem] xl:h-[22rem] z-10'
                             >
                                 <Marker position={location} />
                             </GoogleMap>
                         </LoadScript>
-                        <div className='lg:w-[44rem] lg:h-[22rem] lg:bg-[#67A27D] lg:absolute lg:-bottom-8 lg:left-16'></div>
+                        <div className='lg:w-[32rem] lg:h-[20rem] lg:-bottom-8 lg:left-12 xl:w-[44rem] xl:h-[22rem] lg:bg-[#67A27D] lg:absolute xl:-bottom-8 xl:left-16'></div>
                     </div>
                 </div>
             </div>

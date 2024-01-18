@@ -11,7 +11,10 @@ interface NavLinkProps {
 const NavLink: React.FC<NavLinkProps> = ({ title, index }) => {
     const { handleChangeSlide } = useGlobalContext();
     return <>
-        <a onClick={() => handleChangeSlide(index)}>{title}</a>
+        <a
+            id='nav-link'
+            className='lg:text-white lg:text-lg'
+            onClick={() => handleChangeSlide(index)}>{title}</a>
     </>
 }
 

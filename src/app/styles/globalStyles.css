@@ -45,6 +45,33 @@
 }
 
   @media screen and (min-width: 1024px) {
+    #nav-link {
+      margin: 0 15px;
+      position: relative;
+      text-decoration: none;
+    }
+
+    #nav-link:before {
+      content: '';
+      position: absolute;
+      bottom: -4px; 
+      left: 0;
+      right: 0;
+      height: 2px; 
+      background-color: white;
+      transform: scaleX(0); 
+      transform-origin: 0 50%; 
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-link:hover:before {
+      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+}
+
     .swiper > .swiper-pagination-horizontal {
       position: fixed;
       width: 100vw;

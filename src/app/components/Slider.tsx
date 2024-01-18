@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper/core';
 import { Mousewheel, Pagination, Keyboard } from 'swiper/modules';
 import Home from './Home';

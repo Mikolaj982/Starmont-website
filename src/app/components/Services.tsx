@@ -19,7 +19,7 @@ const Services = () => {
         <div id='services' className='bg-[#43264F] h-[100vh] w-[100vw]'>
             <div className='h-[100%] p-8'>
                 <div className='flex flex-col'>
-                    <h2 className='text-slate-100 mb-6 mt-10 text-4xl font-bold'>Oferta</h2>
+                    <h2 className='text-slate-100 mb-6 mt-16 text-4xl font-bold'>Oferta</h2>
                     <ol className='flex flex-col list-disc pl-4'>
                         {services.map((service, index) => {
                             return (
@@ -33,7 +33,7 @@ const Services = () => {
                         })}
                     </ol>
                     <p className='text-xl font-semibold text-slate-100 mt-6'>Zamów dzwoniąc pod numer: XXX XXX XXX</p>
-                    <span className='flex text-xl underline text-slate-100 absolute bottom-12'><a onClick={() => handleChangeSlide(2)}>Cennik poniżej</a><ArrowDownIcon className='h-8 font-bold' /></span>
+                    <span className='text-xl underline text-slate-100 absolute bottom-12 lg:cursor-pointer'><a className='flex' onClick={() => handleChangeSlide(2)}>Cennik poniżej<ArrowDownIcon className='h-8 font-bold' /></a></span>
                 </div>
             </div >
         </div >

@@ -12,11 +12,11 @@ const Navbar: React.FC = () => {
     }
 
     return (<>
-        <div className='fixed top-0 w-[100%] flex justify-between z-10 p-6'>
-            <Image src={logo} width={100} alt='starmont logo' className='relative -top-7 -left-3' />
-            <Bars3Icon className='h-[25px] text-white' onClick={() => toggleSidebar()} />
+        <div className='fixed top-0 w-[100%] flex justify-between z-10'>
+            <Image src={logo} alt='starmont logo' className='relative -top-7 -left-3 m-6 w-24 lg:w-32 lg:-top-10' />
+            <Bars3Icon className='h-[25px] text-white m-6 lg:hidden' onClick={() => toggleSidebar()} />
+            <NavigationMenu setIsOpen={setIsOpen} isOpen={isOpen} />
         </div>
-        <NavigationMenu setIsOpen={setIsOpen} isOpen={isOpen} />
     </>
     )
 }
