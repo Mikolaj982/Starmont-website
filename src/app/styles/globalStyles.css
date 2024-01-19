@@ -44,6 +44,14 @@
     border: none;
 }
 
+.swiper-slide-shadow-container {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
   @media screen and (min-width: 1024px) {
     #nav-link {
       margin: 0 15px;
