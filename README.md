@@ -1,3 +1,24 @@
+*pl* 
+podgląd: https://strong-sunshine-40ad89.netlify.app/
+## Strona internetowa firmy sprzedającej artykuły blacharskie.
+Technologie:
+- Next.js
+- React TypeScript
+- Tailwind CSS
+- Swiper: Biblioteka do obsługi dynamicznych slajderów, wykorzystana do prezentacji produktów.
+- Google Maps API: Integracja Google Maps, aby ułatwić lokalizację przedsiębiorstwa.
+
+*gb*
+preview: https://strong-sunshine-40ad89.netlify.app/
+## Website of a company specializing in the sale of sheet metal products.
+Technologies:
+- Next.js
+- React TypeScript
+- Tailwind CSS
+- Swiper: Library for handling dynamic sliders, used for product presentations.
+- Google Maps API: Integration of Google Maps to facilitate the location of the business.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
