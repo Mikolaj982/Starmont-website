@@ -54,10 +54,10 @@ const PriceListItems = () => {
 
     const ListElement = ({ name, description, price, image }: menuProps) => {
         return <><li className='flex flex-col items-center lg:w-[18rem] xl:w-[16rem] xl:h-[16rem]'>
-            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 mr-5 md:mr-0 bg-slate-500' />
-            <p className='text-primary text-3xl mb-1 font-bold text-justify'>{name}</p>
-            <p className='text-primary text-xl mb-1 font-medium text-justify'>{description}</p>
-            <p className='text-primary text-2xl mb-1 font-bold'>Cena: {price} zł</p>
+            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 mr-5 md:mr-0 bg-slate-500 rounded-lg' />
+            <p className='text-slate-200 text-3xl mb-1 font-bold text-justify'>{name}</p>
+            <p className='text-slate-200 text-xl mb-1 font-medium text-justify'>{description}</p>
+            <p className='text-slate-200 text-2xl mb-1 font-bold'>Cena: {price} zł</p>
         </li></>
     }
 
