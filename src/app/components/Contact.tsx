@@ -50,7 +50,7 @@ const Contact = () => {
         <div id='contact' className='bg-gradient-to-t from-[#284129] via-[#5a8f5c] to-[#88D78B] h-[100vh] w-[100vw]'>
             <div className='flex flex-col justify-around h-[100vh] p-8 lg:flex-row lg:justify-start'>
                 <div className='mb-4'>
-                    <h2 className='text-primary mb-10 mt-8 text-4xl font-bold lg:mt-20'>Kontakt</h2>
+                    <h2 className='text-primary mb-10 mt-12 sm:mt-8 text-3xl sm:text-4xl font-bold lg:mt-20'>Kontakt</h2>
                     <span className='flex mb-3'>
                         <MapPinIcon className='h-4 sm:h-8 mr-2 text-primary' />
                         <p className='text-primary font-semibold md:text-xl'>Dziurów, ul. Słoneczna 25, 27-230</p>

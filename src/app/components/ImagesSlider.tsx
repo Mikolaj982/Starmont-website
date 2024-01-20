@@ -12,7 +12,7 @@ const ImagesSlider = () => {
             effect={'cards'}
             grabCursor={true}
             modules={[EffectCards]}
-            className='w-[15rem] mt-[7rem] sm:w-[17rem] md:w-[19rem] md:mt-[4rem] lg:mr-[7rem] xl:mr-[16rem]'
+            className='w-[15rem] mt-[2rem] sm:w-[17rem] md:w-[19rem] md:mt-[4rem] lg:mr-[7rem] xl:mr-[16rem]'
         >
             {Images.map((slide, index) => {
                 return <>

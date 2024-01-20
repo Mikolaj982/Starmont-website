@@ -17,13 +17,13 @@ const PriceListItems = () => {
         {
             name: 'Blacha trapezowa T-18 oraz T-6',
             description: 'Produkcja na wymiar w wybranym kolorze. Grubość 0.5 mm.',
-            price: 10,
+            price: 30,
             image: example,
         },
         {
             name: 'Blacha trapezowa T-18 oraz T-6',
             description: 'Ocynk lub lakier podkładowy. Docinana na wymiar. Grubość 0.5 mm.',
-            price: 10,
+            price: 30,
             image: example,
         },
         {
@@ -35,29 +35,29 @@ const PriceListItems = () => {
         {
             name: 'Blachodachówka',
             description: 'Na wymiar w wybranym kolorze.',
-            price: 10,
+            price: 35,
             image: example,
         },
         {
             name: 'Wkręty',
             description: '',
-            price: 10,
+            price: 32,
             image: example,
         },
         {
             name: 'Rynna PCV',
             description: '75 mm, 125 mm, 150 mm.',
-            price: 10,
+            price: 25,
             image: example,
         },
     ];
 
     const ListElement = ({ name, description, price, image }: menuProps) => {
-        return <><li className='flex flex-col items-center lg:w-[18rem] xl:w-[16rem] xl:h-[16rem]'>
-            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-4 mr-5 md:mr-0 bg-slate-500 rounded-lg' />
-            <p className='text-slate-200 text-3xl mb-1 font-bold text-justify'>{name}</p>
-            <p className='text-slate-200 text-xl mb-1 font-medium text-justify'>{description}</p>
-            <p className='text-slate-200 text-2xl mb-1 font-bold'>Cena: {price} zł</p>
+        return <><li className='flex flex-col items-center w-[12rem] h-[12rem] lg:w-[18rem] xl:w-[16rem] xl:h-[16rem]'>
+            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-2 md:mr-0 bg-slate-500 rounded-lg' />
+            <p className='text-slate-200 text-lg md:text-3xl mb-1 font-bold text-justify'>{name}</p>
+            <p className='text-slate-200 text-sm md:text-xl mb-1 font-medium text-justify'>{description}</p>
+            <p className='text-slate-200 text-md md:text-2xl mb-1 font-bold'>Cena: {price} zł</p>
         </li></>
     }
 
@@ -79,10 +79,10 @@ const PriceListItems = () => {
                 }}
                 slidesPerView={1}
                 spaceBetween={20}
-                className='h-[90vh] w-[85vw]'
+                className='h-[90vh]'
             >
                 {menu.map((item, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className='flex justify-center'>
                         <ListElement
                             name={item.name}
                             description={item.description}
