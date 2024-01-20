@@ -47,7 +47,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='bg-[#88D78B] h-[100vh] w-[100vw]'>
+        <div id='contact' className='bg-gradient-to-t from-[#284129] via-[#5a8f5c] to-[#88D78B] h-[100vh] w-[100vw]'>
             <div className='flex flex-col justify-around h-[100vh] p-8 lg:flex-row lg:justify-start'>
                 <div className='mb-4'>
                     <h2 className='text-primary mb-10 mt-8 text-4xl font-bold lg:mt-20'>Kontakt</h2>
@@ -77,12 +77,12 @@ const Contact = () => {
                                     mapTypeControl: false,
                                     fullscreenControl: false,
                                 }}
-                                mapContainerClassName='w-[100%] h-[14rem] mb-4 sm:w-[60%] md:h-[19rem] md:w-[80%] mx-auto lg:w-[32rem] xl:w-[44rem] xl:h-[22rem] z-10'
+                                mapContainerClassName='w-[100%] h-[14rem] mb-4 sm:w-[60%] md:h-[19rem] md:w-[80%] mx-auto lg:w-[32rem] xl:w-[44rem] xl:h-[22rem] z-10 rounded-lg'
                             >
                                 <Marker position={location} />
                             </GoogleMap>
                         </LoadScript>
-                        <div className='lg:w-[32rem] lg:h-[20rem] lg:-bottom-8 lg:left-12 xl:w-[44rem] xl:h-[22rem] lg:bg-[#67A27D] lg:absolute xl:-bottom-8 xl:left-16'></div>
+                        <div className='lg:w-[32rem] lg:h-[20rem] lg:-bottom-8 lg:left-12 xl:w-[44rem] xl:h-[22rem] lg:bg-[#67A27D] lg:absolute xl:-bottom-8 xl:left-16 rounded-lg'></div>
                     </div>
                 </div>
             </div>
