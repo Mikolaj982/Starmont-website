@@ -18,7 +18,7 @@ const Services = () => {
     ];
 
     return (
-        <div id='services' className='bg-gradient-to-t from-[#27162e] via-[#5e376e] to-[#7c5191] h-[100vh] w-[100vw]'>
+        <div id='services' className='bg-gradient-to-t from-[#171a2c] via-[#373f6c] to-[#505b9c] h-[100vh] w-[100vw]'>
             <div className='h-[100%] p-8'>
                 <div className='flex flex-col'>
                     <h2 className='text-slate-100 mb-2 sm:mb-6 mt-8 sm:mt-16 text-3xl sm:text-4xl font-bold lg:mt-20'>Oferta</h2>
@@ -34,7 +34,10 @@ const Services = () => {
                             )
                         })}
                     </ol>
-                    <p className='text-sm sm:text-xl font-semibold text-slate-100 mt-2 sm:mt-6'>Zamów dzwoniąc pod numer: XXX XXX XXX</p>
+                    <p className='text-sm sm:text-xl font-semibold text-slate-100 mt-2 sm:mt-6'>Zamów dzwoniąc pod numer: <button
+                        className="px-6 py-3 text-base md:text-lg font-semibold rounded-lg border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-200"
+                    >XXX XXX XXX</button></p>
+
                     <span className='text-xl underline text-slate-100 absolute bottom-4 sm:bottom-12 lg:cursor-pointer'><a className='flex' onClick={() => handleChangeSlide(2)}>Cennik poniżej<ArrowDownIcon className='h-8 font-bold' /></a></span>
                 </div>
                 <div className='hidden lg:block lg:absolute lg:ml-[15rem] lg:-mt-[18rem] xl:ml-[0rem]'>

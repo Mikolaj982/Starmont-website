@@ -47,26 +47,26 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='bg-gradient-to-t from-[#284129] via-[#5a8f5c] to-[#88D78B] h-[100vh] w-[100vw]'>
+        <div id='contact' className='bg-gradient-to-t from-[#171a2c] via-[#373f6c] to-[#505b9c] h-[100vh] w-[100vw]'>
             <div className='flex flex-col justify-around h-[100vh] p-8 lg:flex-row lg:justify-start'>
                 <div className='mb-4'>
-                    <h2 className='text-primary mb-10 mt-12 sm:mt-8 text-3xl sm:text-4xl font-bold lg:mt-20'>Kontakt</h2>
+                    <h2 className='text-white mb-10 mt-12 sm:mt-8 text-3xl sm:text-4xl font-bold lg:mt-20'>Kontakt</h2>
                     <span className='flex mb-3'>
-                        <MapPinIcon className='h-4 sm:h-8 mr-2 text-primary' />
-                        <p className='text-primary font-semibold md:text-xl'>Dziurów, ul. Słoneczna 25, 27-230</p>
+                        <MapPinIcon className='h-4 sm:h-8 mr-2 text-red-600' />
+                        <p className='text-white font-semibold md:text-xl'>Dziurów, ul. Słoneczna 25, 27-230</p>
                     </span>
                     <span className='flex mb-3'>
-                        <PhoneIcon className='h-4 sm:h-8 mr-2 text-primary' />
-                        <p className='text-primary font-semibold md:text-xl'>+48 XXX XXX XXX</p>
+                        <PhoneIcon className='h-4 sm:h-8 mr-2 text-black' />
+                        <a className='text-white font-semibold md:text-xl' href="tel:+48123123123">+48123123123</a>
                     </span>
                     <span className='flex'>
-                        <LinkIcon className='h-4 sm:h-8 mr-2 text-primary' />
-                        <p className='text-primary font-semibold md:text-xl'>example@gmail.com</p>
+                        <LinkIcon className='h-4 sm:h-8 mr-2 text-white' />
+                        <p className='text-white font-semibold md:text-xl'>example@gmail.com</p>
                     </span>
                 </div>
                 <div className='flex justify-between flex-col lg:justify-center lg:ml-32'>
                     <div className='lg:absolute'>
-                        <h3 className='text-secondary-text-color mb-4 text-xl sm:text-2xl font-semibold text-primary'>Gdzie nas znaleźć?</h3>
+                        <h3 className='text-secondary-text-color mb-4 text-xl sm:text-2xl font-semibold text-white'>Gdzie nas znaleźć?</h3>
                         <LoadScript googleMapsApiKey={googleMapsApiKey}>
                             <GoogleMap
                                 onLoad={handleMapLoad}

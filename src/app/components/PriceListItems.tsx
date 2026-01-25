@@ -58,6 +58,21 @@ const PriceListItems = () => {
             <p className='text-slate-200 text-lg md:text-3xl mb-1 font-bold text-justify'>{name}</p>
             <p className='text-slate-200 text-sm md:text-xl mb-1 font-medium text-justify'>{description}</p>
             <p className='text-slate-200 text-md md:text-2xl mb-1 font-bold'>Cena: {price} zł</p>
+            <button
+                className="
+    mt-4
+    px-4 py-2
+    text-sm
+    font-semibold
+    rounded-md
+    bg-orange-500
+    text-white
+    hover:bg-orange-600
+    transition
+  "
+            >
+                <a href="tel:+48123123123">Zamów teraz</a>
+            </button>
         </li></>
     }
 
