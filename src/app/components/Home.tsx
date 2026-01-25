@@ -23,7 +23,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 mx-auto px-6">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight pb-8">
                         <span className="block mb-2">Blachy trapezowe i pokrycia dachowe</span>
                         <span className="text-orange-500">
                             <TypeAnimation
@@ -61,7 +61,7 @@ const Home = () => {
                 </div>
             </section>
             <a
-                href="tel:+48123123123"
+                href="tel:+48696350433"
                 className="md:hidden fixed bottom-4 left-4 right-4 z-50 py-4 rounded-xl bg-orange-500 text-white text-lg font-bold text-center shadow-2xl"
             >
                 Zadzwoń teraz

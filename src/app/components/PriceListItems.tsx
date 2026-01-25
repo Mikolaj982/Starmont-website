@@ -53,62 +53,90 @@ const PriceListItems = () => {
     ];
 
     const ListElement = ({ name, description, price, image }: menuProps) => {
-        return <><li className='flex flex-col items-center w-[12rem] h-[12rem] lg:w-[18rem] xl:w-[16rem] xl:h-[16rem]'>
-            <Image src={image} alt='item' className='w-[20rem] h-[16.5rem] mb-2 md:mr-0 bg-slate-500 rounded-lg' />
-            <p className='text-slate-200 text-lg md:text-3xl mb-1 font-bold text-justify'>{name}</p>
-            <p className='text-slate-200 text-sm md:text-xl mb-1 font-medium text-justify'>{description}</p>
-            <p className='text-slate-200 text-md md:text-2xl mb-1 font-bold'>Cena: {price} zł</p>
-            <button
+        return (
+            <li
                 className="
-    mt-4
-    px-4 py-2
-    text-sm
-    font-semibold
-    rounded-md
-    bg-orange-500
-    text-white
-    hover:bg-orange-600
-    transition
-  "
+        h-full
+        bg-white/10 backdrop-blur
+        rounded-xl
+        px-4 py-2
+        flex
+        gap-3
+        items-center
+      "
             >
-                <a href="tel:+48123123123">Zamów teraz</a>
-            </button>
-        </li></>
-    }
+                {/* LEWA STRONA */}
+                <div className="flex flex-col flex-1 min-w-0">
+                    <p className="text-slate-100 text-base md:text-lg font-bold leading-tight break-words">
+                        {name}
+                    </p>
 
-    return (
-        <>
-            <Swiper
-                modules={[Pagination]}
-                pagination={{ clickable: true }}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                    1280: {
-                        slidesPerView: 4,
-                    }
-                }}
-                slidesPerView={1}
-                spaceBetween={20}
-                className='h-[90vh]'
-            >
-                {menu.map((item, index) => (
-                    <SwiperSlide key={index} className='flex justify-center'>
-                        <ListElement
-                            name={item.name}
-                            description={item.description}
-                            price={item.price}
-                            image={item.image}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </>
-    )
-}
+                    {description && (
+                        <p className="text-slate-300 text-xs md:text-sm leading-tight line-clamp-1 md:line-clamp-2">
+                            {description}
+                        </p>
+                    )}
+
+                    <p className="text-slate-100 text-sm md:text-base font-bold mt-auto">
+                        od {price} zł
+                    </p>
+
+                    <a
+                        href="tel:+48696350433"
+                        className="
+            mt-1
+            w-fit
+            text-xs md:text-sm
+            font-semibold
+            text-orange-400
+            hover:text-orange-300
+            underline
+          "
+                    >
+                        Zamów
+                    </a>
+                </div>
+
+                {/* PRAWA STRONA – ZDJĘCIE */}
+                <Image
+                    src={image}
+                    alt={name}
+                    className="
+          w-[3.5rem] h-[3.5rem]
+          md:w-[5rem] md:h-[5rem]
+          object-cover
+          rounded-md
+          bg-slate-500
+          flex-shrink-0
+        "
+                />
+            </li>
+        );
+    };
+
+
+
+
+    return (<>
+        <ul
+            className="
+    grid
+    h-full
+    gap-3
+    grid-cols-1
+    grid-rows-6
+    md:grid-cols-2
+    md:grid-rows-3
+  "
+        >
+            {menu.slice(0, 6).map((item, index) => (
+                <ListElement key={index} {...item} />
+            ))}
+        </ul>
+    </>
+    );
+};
+
+
 
 export default PriceListItems
