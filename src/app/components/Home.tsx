@@ -64,7 +64,7 @@ const Home = () => {
                 href="tel:+48696350433"
                 className="md:hidden fixed bottom-4 left-4 right-4 z-50 py-4 rounded-xl bg-orange-500 text-white text-lg font-bold text-center shadow-2xl"
             >
-                Zadzwoń teraz
+                +48 696 350 433
             </a>
         </div>
 
