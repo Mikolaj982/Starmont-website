@@ -16,7 +16,7 @@ const Contact = () => {
     const [location, setLocation] = useState<Coordinates>({ lat: 0, lng: 0 });
     const contactData = {
         adress: 'Dziurów ul.Słoneczna 25, 27-230',
-        phoneNumber: '+48 666 350 433',
+        phoneNumber: ["666", "350", "433"].join(""),
         email: 'starmont@wp.pl'
     }
 
@@ -62,7 +62,7 @@ const Contact = () => {
                     </span>
                     <span className='flex mb-3'>
                         <PhoneIcon className='h-4 sm:h-8 mr-2 text-black' />
-                        <a className='text-white font-semibold md:text-xl' href="tel:+48123123123">{contactData.phoneNumber}</a>
+                        <a className='text-white font-semibold md:text-xl' href={`tel:${contactData.phoneNumber}`}>{contactData.phoneNumber}</a>
                     </span>
                     <span className='flex'>
                         <LinkIcon className='h-4 sm:h-8 mr-2 text-white' />

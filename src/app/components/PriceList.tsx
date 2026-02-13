@@ -15,6 +15,9 @@ const PriceList = () => {
                 <div className="flex-1 min-h-0">
                     <PriceListItems />
                 </div>
+                <p className="text-xs md:text-xl text-slate-200 mt-1 self-center">
+                    Wysoka jakość • Szybki czas realizacji • Dostawa
+                </p>
             </div>
         </section>
     );

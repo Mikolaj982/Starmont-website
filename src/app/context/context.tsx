@@ -31,14 +31,17 @@ export const MyContextProvider = (props: any) => {
                 modules={[Pagination, Mousewheel, Keyboard]}
                 direction="vertical"
                 keyboard
-                mousewheel
+                mousewheel={{
+                    releaseOnEdges: true,
+                }}
+
                 pagination={{
                     clickable: true
                 }}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper
                 }}
-                className='h-[100vh]'
+                className='h-screen'
             >
                 {props.children}
             </Swiper>

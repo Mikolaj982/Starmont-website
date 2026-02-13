@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import example from '../../../public/images/blacha-trapezowa-biala.webp'
+import blachaTrapez from '../../../public/images/blacha-trapezowa-magazyn.webp';
+import blachodachówka from '../../../public/images/blachodachówka.jpg';
+import wkręty from '../../../public/images/wkrety-rynny-membrana.webp';
+import płaska from '../../../public/images/blacha-plaska-czarna-paleta.webp';
+import t6 from '../../../public/images/blacha-trapezowa-T8.png';
 import { StaticImageData } from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -15,12 +20,12 @@ export interface menuProps {
 const PriceListItems = () => {
     const menu: menuProps[] = [
         { name: 'Blacha trapezowa T-18', price: 30, image: example },
-        { name: 'Blacha trapezowa T-6', price: 30, image: example },
-        { name: 'Blacha płaska', price: 90, image: example },
-        { name: 'Blachodachówka', price: 32, image: example },
-        { name: 'Wkręty', price: 32, image: example },
-        { name: 'Rynna PCV', price: 25, image: example },
-        { name: 'Membrana dachowa', price: 25, image: example },
+        { name: 'Blacha trapezowa T-6', price: 30, image: t6 },
+        { name: 'Blacha płaska', price: 90, image: płaska },
+        { name: 'Blachodachówka', price: 32, image: blachodachówka },
+        { name: 'Wkręty', price: 32, image: wkręty },
+        { name: 'Rynna PCV', price: 25, image: wkręty },
+        { name: 'Membrana dachowa', price: 25, image: wkręty },
     ];
 
     const ListElement = ({ name, price, image }: menuProps) => {
@@ -37,10 +42,10 @@ const PriceListItems = () => {
                 "
             >
                 <div className="flex flex-col min-w-0 flex-1">
-                    <p className="text-slate-100 text-sm md:text-base font-bold leading-tight">
+                    <p className="text-slate-100 text-sm md:text-base leading-tight">
                         {name}
                     </p>
-                    <p className="text-slate-100 text-xs md:text-sm font-semibold">
+                    <p className="text-slate-100 text-sm md:text-xl font-bold leading-none self-end">
                         od {price} zł
                     </p>
                 </div>
@@ -64,6 +69,77 @@ const PriceListItems = () => {
             </li>
         );
     };
+
+    // const ListElement = ({ name, price, image }: menuProps) => {
+    //     return (
+    //         <li
+    //             className="
+    //             relative
+    //             bg-white/15 backdrop-blur-md
+    //             rounded-2xl
+    //             px-4 py-4
+    //             flex flex-col
+    //             justify-between
+    //             transition
+    //             duration-300
+    //             hover:scale-[1.02]
+    //             hover:bg-white/20
+    //             hover:shadow-2xl
+    //             border border-white/10
+    //         "
+    //         >
+    //             <div className="flex items-center gap-4">
+    //                 {image && (
+    //                     <Image
+    //                         src={image}
+    //                         alt={name}
+    //                         width={80}
+    //                         height={80}
+    //                         className="
+    //                         w-16 h-16
+    //                         object-cover
+    //                         rounded-xl
+    //                         bg-slate-600
+    //                         flex-shrink-0
+    //                     "
+    //                     />
+    //                 )}
+
+    //                 <div className="flex flex-col min-w-0">
+    //                     <p className="text-white text-base font-semibold leading-tight">
+    //                         {name}
+    //                     </p>
+
+    //                     <p className="text-xs text-slate-200 mt-1">
+    //                         Wysoka jakość • Dostępne od ręki
+    //                     </p>
+    //                 </div>
+    //             </div>
+    //             <div className="mt-4 flex items-end justify-between">
+    //                 <div>
+    //                     <span className="text-xs text-slate-300">od</span>
+    //                     <p className="text-2xl font-bold text-white leading-none">
+    //                         {price} zł
+    //                     </p>
+    //                 </div>
+
+    //                 <button
+    //                     className="
+    //                     text-sm
+    //                     px-3 py-1.5
+    //                     rounded-lg
+    //                     bg-white text-[#373f6c]
+    //                     font-semibold
+    //                     hover:bg-slate-200
+    //                     transition
+    //                 "
+    //                 >
+    //                     Zapytaj
+    //                 </button>
+    //             </div>
+    //         </li>
+    //     );
+    // };
 
     return (
         <ul

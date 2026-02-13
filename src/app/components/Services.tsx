@@ -34,7 +34,7 @@ const Services = () => {
             name: 'Wkręty / Membrany dachowe / Rynny oraz akcesoria',
             desc: 'Dachowe i konstrukcyjne',
             image: wkręty,
-            descForDesktop: 'Odpowiednio dobrane elementy zapewniają trwałośOferowane produkty charakteryzują się odpornością na warunki atmosferyczne, łatwym montażem oraz kompatybilnością z popularnymi systemami dachowymi. To praktyczne rozwiązania zarówno dla nowych inwestycji, jak i prac modernizacyjnych.',
+            descForDesktop: 'Odpowiednio dobrane elementy zapewniają trwałość. Oferowane produkty charakteryzują się odpornością na warunki atmosferyczne, łatwym montażem oraz kompatybilnością z popularnymi systemami dachowymi. To praktyczne rozwiązania zarówno dla nowych inwestycji, jak i prac modernizacyjnych.',
         },
     ]
 
