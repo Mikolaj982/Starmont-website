@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import example from '../../../public/images/image (1).webp'
+import example from '../../../public/images/blacha-trapezowa-biala.webp'
 import { StaticImageData } from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -14,41 +14,13 @@ export interface menuProps {
 
 const PriceListItems = () => {
     const menu: menuProps[] = [
-        {
-            name: 'Blacha trapezowa T-18',
-            price: 30,
-            image: example,
-        },
-        {
-            name: 'Blacha trapezowa T-6',
-            price: 30,
-            image: example,
-        },
-        {
-            name: 'Blacha płaska',
-            price: 90,
-            image: example,
-        },
-        {
-            name: 'Blachodachówka',
-            price: 32,
-            image: example,
-        },
-        {
-            name: 'Wkręty',
-            price: 32,
-            image: example,
-        },
-        {
-            name: 'Rynna PCV',
-            price: 25,
-            image: example,
-        },
-        {
-            name: 'Membrana dachowa',
-            price: 25,
-            image: example,
-        },
+        { name: 'Blacha trapezowa T-18', price: 30, image: example },
+        { name: 'Blacha trapezowa T-6', price: 30, image: example },
+        { name: 'Blacha płaska', price: 90, image: example },
+        { name: 'Blachodachówka', price: 32, image: example },
+        { name: 'Wkręty', price: 32, image: example },
+        { name: 'Rynna PCV', price: 25, image: example },
+        { name: 'Membrana dachowa', price: 25, image: example },
     ];
 
     const ListElement = ({ name, price, image }: menuProps) => {
@@ -58,6 +30,7 @@ const PriceListItems = () => {
                     bg-white/10 backdrop-blur
                     rounded-xl
                     px-3 py-2
+                    md:px-4 md:py-3
                     flex
                     items-center
                     gap-3
@@ -71,16 +44,16 @@ const PriceListItems = () => {
                         od {price} zł
                     </p>
                 </div>
-
                 {image && (
                     <Image
                         src={image}
                         alt={name}
-                        width={56}
-                        height={56}
+                        width={64}
+                        height={64}
                         className="
                             w-12 h-12
                             md:w-14 md:h-14
+                            lg:w-16 lg:h-16
                             object-cover
                             rounded-md
                             bg-slate-600
@@ -98,7 +71,8 @@ const PriceListItems = () => {
                 grid
                 gap-3
                 grid-cols-1
-                md:grid-cols-2
+                sm:grid-cols-2
+                lg:grid-cols-3
             "
         >
             {menu.slice(0, 6).map((item, index) => (

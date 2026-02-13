@@ -14,6 +14,11 @@ const Contact = () => {
     const [map, setMap] = useState<google.maps.Map | null>(null);
     const [address, setAddress] = useState<string>('Dziurów Słoneczna 25, Poland');
     const [location, setLocation] = useState<Coordinates>({ lat: 0, lng: 0 });
+    const contactData = {
+        adress: 'Dziurów ul.Słoneczna 25, 27-230',
+        phoneNumber: '+48 666 350 433',
+        email: 'starmont@wp.pl'
+    }
 
     useEffect(() => {
         if (map) {
@@ -53,15 +58,15 @@ const Contact = () => {
                     <h2 className='text-white mb-10 mt-12 sm:mt-8 text-3xl sm:text-4xl font-bold lg:mt-20'>Kontakt</h2>
                     <span className='flex mb-3'>
                         <MapPinIcon className='h-4 sm:h-8 mr-2 text-red-600' />
-                        <p className='text-white font-semibold md:text-xl'>Dziurów, ul. Słoneczna 25, 27-230</p>
+                        <p className='text-white font-semibold md:text-xl'>{contactData.adress}</p>
                     </span>
                     <span className='flex mb-3'>
                         <PhoneIcon className='h-4 sm:h-8 mr-2 text-black' />
-                        <a className='text-white font-semibold md:text-xl' href="tel:+48123123123">+48123123123</a>
+                        <a className='text-white font-semibold md:text-xl' href="tel:+48123123123">{contactData.phoneNumber}</a>
                     </span>
                     <span className='flex'>
                         <LinkIcon className='h-4 sm:h-8 mr-2 text-white' />
-                        <p className='text-white font-semibold md:text-xl'>example@gmail.com</p>
+                        <p className='text-white font-semibold md:text-xl'>{contactData.email}</p>
                     </span>
                 </div>
                 <div className='flex justify-between flex-col lg:justify-center lg:ml-32'>

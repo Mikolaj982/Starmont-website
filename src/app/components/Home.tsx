@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import ImagesSlider from './ImagesSlider';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import image from '../../../public/images/image.webp';
+import image from '../../../public/images/blacha-trapezowa-tlo.webp';
 import Image from 'next/image';
 
 const Home = () => {
