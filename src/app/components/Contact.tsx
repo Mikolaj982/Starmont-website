@@ -16,7 +16,7 @@ const Contact = () => {
     const [location, setLocation] = useState<Coordinates>({ lat: 0, lng: 0 });
     const contactData = {
         adress: 'Dziurów ul.Słoneczna 25, 27-230',
-        phoneNumber: ["666", "350", "433"].join(""),
+        phoneNumber: ["+48", "666", "350", "433"].join(""),
         email: 'starmont@wp.pl'
     }
 

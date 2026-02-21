@@ -41,7 +41,7 @@ const Services = () => {
     return (
         <section
             id="services"
-            className="h-[100vh] w-[100vw] bg-gradient-to-t from-[#171a2c] via-[#373f6c] to-[#505b9c] px-6 py-16 flex flex-col"
+            className="h-[100vh] w-[100vw] bg-gradient-to-t from-[#171a2c] via-[#373f6c] to-[#505b9c] px-6 pt-16 pb-4 flex flex-col"
         >
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-100 mb-4 lg:mt-12">
                 Oferta
