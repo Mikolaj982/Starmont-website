@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import LoadingSpinner from './components/LoadingSpinner';
 import dynamic from 'next/dynamic';
-import logo from '../../../public/images/logo.png';
 
 const DynamicHeader = dynamic(() => import('./page'), {
     loading: () => <LoadingSpinner />,
