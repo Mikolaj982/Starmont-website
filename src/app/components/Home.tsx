@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image"
-import image from "../../../public/images/blacha-trapezowa-tlo.webp"
 import HeroClient from './HeroClient';
 
 const Home = () => {
@@ -8,7 +7,7 @@ const Home = () => {
         <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-t from-[#171a2c] via-[#373f6c] to-[#505b9c]">
             <section className="relative min-h-[100vh] flex items-center">
                 <Image
-                    src={image}
+                    src="/images/blacha-trapezowa-tlo.webp"
                     alt="blacha trapezowa"
                     fill
                     className="object-cover"
@@ -28,4 +27,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
