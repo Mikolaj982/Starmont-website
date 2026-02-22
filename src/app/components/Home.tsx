@@ -23,8 +23,10 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 mx-auto px-6">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight pb-8">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
                         <span className="block mb-2">Blachy trapezowe i pokrycia dachowe</span>
+                    </h1>
+                    <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight pb-8">
                         <span className="text-orange-500">
                             <TypeAnimation
                                 sequence={[
@@ -40,7 +42,8 @@ const Home = () => {
                                 repeat={Infinity}
                             />
                         </span>
-                    </h1>
+                    </p>
+
                     <p className="mt-4 text-lg text-gray-200">
                         Produkcja na wymiar • Dostawa • Doradztwo
                     </p>
