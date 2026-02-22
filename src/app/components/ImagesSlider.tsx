@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import { EffectCards } from 'swiper/modules';
-import example from '../../../public/images/logo.png';
+import example from '../../../public/images/favicon.png';
 
 const ImagesSlider = () => {
     const Images = [example, example, example, example, example];
