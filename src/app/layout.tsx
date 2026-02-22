@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import LoadingSpinner from './components/LoadingSpinner';
 import dynamic from 'next/dynamic';
+import logo from '../../../public/images/logo.png';
 
 const DynamicHeader = dynamic(() => import('./page'), {
     loading: () => <LoadingSpinner />,
@@ -13,7 +14,22 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: 'Blacha trapezowa - Starmont',
     description: 'Blacha trapezowa na wymiar',
-    // icons: '/images/briefcase-logo.png',
+    openGraph: {
+        title: 'Blacha trapezowa - Starmont',
+        description: "Oferta blach trapezowych, płaskich, blachodachówek oraz akcesoriów.",
+        url: "https://blachy.netlify.app",
+        images: [
+            {
+                url: "https://blachy.netlify.app/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+        siteName: 'Blacha trapezowa - Starmont',
+    },
+    icons: {
+        icon: '../../../public/images/favicon.png',
+    }
 }
 
 export default function RootLayout({

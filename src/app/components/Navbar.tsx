@@ -2,7 +2,7 @@
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import React, { useState } from 'react'
 import Image from 'next/image';
-import logo from '../../../public/images/logo.png';
+import logo from '../../../public/images/favicon.png';
 import NavigationMenu from './NavigationMenu';
 
 const Navbar: React.FC = () => {
