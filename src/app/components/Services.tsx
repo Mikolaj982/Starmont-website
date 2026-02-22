@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import { ArrowDownIcon } from '@heroicons/react/20/solid';
 import { useGlobalContext } from '../context/context';
