@@ -12,7 +12,7 @@ export default function HeroClient() {
         <>
             <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight pb-8">
                 <span className="text-orange-500">
-                    <TypeAnimation
+                    {/* <TypeAnimation
                         sequence={[
                             'Blacha trapezowa',
                             2000,
@@ -24,7 +24,7 @@ export default function HeroClient() {
                         cursor
                         speed={50}
                         repeat={Infinity}
-                    />
+                    /> */}
                 </span>
             </p>
 

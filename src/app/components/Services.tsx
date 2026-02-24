@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowDownIcon } from '@heroicons/react/20/solid';
 import { useGlobalContext } from '../context/context';
 import blachaTrapez from '../../../public/images/blacha-trapezowa-magazyn.webp';
 import blachodachówka from '../../../public/images/blachodachówka.jpg';

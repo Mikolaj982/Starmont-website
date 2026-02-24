@@ -13,6 +13,8 @@ const Home = () => {
                     className="object-cover"
                     priority
                     unoptimized
+                    quality={70}
+                    sizes='100vw'
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 mx-auto px-6">

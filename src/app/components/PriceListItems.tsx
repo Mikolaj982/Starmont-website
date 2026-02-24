@@ -2,14 +2,12 @@
 import React from 'react'
 import Image from 'next/image';
 import example from '../../../public/images/blacha-trapezowa-biala.webp'
-import blachaTrapez from '../../../public/images/blacha-trapezowa-magazyn.webp';
+// import blachaTrapez from '../../../public/images/blacha-trapezowa-magazyn.webp';
 import blachodachówka from '../../../public/images/blachodachówka.jpg';
 import wkręty from '../../../public/images/wkrety-rynny-membrana.webp';
 import płaska from '../../../public/images/blacha-plaska-czarna-paleta.webp';
 import t6 from '../../../public/images/blacha-trapezowa-T8.png';
 import { StaticImageData } from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 
 export interface menuProps {
     name: string,
