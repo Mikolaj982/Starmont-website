@@ -17,7 +17,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 mx-auto px-6">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
                         Blachy trapezowe i pokrycia dachowe
                     </h1>
                     <HeroClient />

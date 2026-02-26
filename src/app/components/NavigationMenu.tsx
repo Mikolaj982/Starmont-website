@@ -35,7 +35,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ setIsOpen, isOpen }) =>
                 <h2 className='uppercase font-bold mt-3 text-2xl text-slate-900 lg:hidden'>menu</h2>
                 <ul className='mt-4 mb-4 min-h-32 lg:h-10 lg:flex lg:min-h-4 lg:justify-end lg:pr-6'>
                     {menuNavigator.map((obj, index) => {
-                        return <li key={index} className='uppercase p-3 text-slate-900 font-semibold lg:cursor-pointer'>
+                        return <li key={index} className='uppercase p-3 text-slate-900 font-normal lg:cursor-pointer'>
                             <NavLink title={obj.name} index={index} setIsOpen={setIsOpen} />
                         </li>
                     })}

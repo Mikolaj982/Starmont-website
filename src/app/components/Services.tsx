@@ -52,7 +52,7 @@ const Services = () => {
                                 className="bg-white/10 backdrop-blur rounded-lg p-2 flex items-center lg:p-4 flex-row justify-between"
                             >
                                 <div>
-                                    <h3 className="text-base font-semibold text-white">
+                                    <h3 className="text-base font-normal text-white">
                                         {service.name}
                                     </h3>
                                     <p className="text-slate-200 mt-1 text-sm lg:hidden">
@@ -111,7 +111,7 @@ const Services = () => {
                 border-orange-400/40
                 px-3 py-2
                 text-sm
-                font-semibold
+                font-normal
                 text-orange-400
                 hover:bg-orange-400/10
                 hover:text-orange-300

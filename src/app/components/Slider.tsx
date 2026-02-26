@@ -9,7 +9,7 @@ import PriceList from './PriceList';
 import Contact from './Contact';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/swiper-bundle.css';
+// import 'swiper/swiper-bundle.css';
 import { MyContextProvider } from '../context/context';
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 

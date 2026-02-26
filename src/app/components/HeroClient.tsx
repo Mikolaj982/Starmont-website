@@ -1,6 +1,6 @@
 'use client'
 
-import { TypeAnimation } from 'react-type-animation'
+// import { TypeAnimation } from 'react-type-animation'
 import { useGlobalContext } from '../context/context'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -10,7 +10,7 @@ export default function HeroClient() {
 
     return (
         <>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight pb-8">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight pb-8">
                 <span className="text-orange-500">
                     {/* <TypeAnimation
                         sequence={[
@@ -35,7 +35,7 @@ export default function HeroClient() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <button
                     onClick={() => handleChangeSlide(1)}
-                    className="px-6 py-3 font-semibold rounded-lg border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
+                    className="px-6 py-3 font-normal rounded-lg border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
                 >
                     Sprawdź ofertę
                 </button>
