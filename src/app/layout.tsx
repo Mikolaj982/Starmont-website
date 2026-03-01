@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 
-const inter = Inter({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
+const inter = Inter({ subsets: ['latin'], display: 'swap', fallback: ['system-ui', 'arial'] });
 
 export const metadata: Metadata = {
     title: 'Blacha trapezowa - Starmont',
